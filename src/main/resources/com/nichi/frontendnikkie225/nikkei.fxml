@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.nichi.frontendnikkie225.HelloController">
+    <children>
+        <TabPane layoutX="0" layoutY="0" prefWidth="800" prefHeight="600" tabClosingPolicy="UNAVAILABLE" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+            <tabs>
+
+                <Tab text="Divisor">
+                    <AnchorPane>
+
+                        <HBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+                            <Button text="Load" fx:id="divisorLoadBtn" />
+                            <Button text="Save" fx:id="divisorSaveBtn" />
+                        </HBox>
+
+                        <TableView fx:id="divisorTable" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+                            <columns>
+                                <TableColumn text="Index" fx:id="divIndexCol" />
+                                <TableColumn text="From Date" fx:id="divFromDtCol" />
+                                <TableColumn text="To Date" fx:id="divToDtCol" />
+                                <TableColumn text="Divisor" fx:id="divDivisorCol" />
+                                <TableColumn text="Update Source" fx:id="divUpdateSourceCol" />
+                                <TableColumn text="Update Time" fx:id="divUpdateTimeCol" />
+                            </columns>
+                        </TableView>
+                    </AnchorPane>
+                </Tab>
+
+                <Tab text="Dividend">
+                    <AnchorPane>
+
+                        <HBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+                            <Button text="Load" fx:id="dividendLoadBtn" />
+                            <Button text="Save" fx:id="dividendSaveBtn" />
+                        </HBox>
+
+                        <TableView fx:id="dividendTable" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+                            <columns>
+                                <TableColumn text="Date" fx:id="dividendDt" />
+                                <TableColumn text="Index" fx:id="dividendIndex" />
+                                <TableColumn text="Div Date" fx:id="dividendDivDt" />
+                                <TableColumn text="Dividend" fx:id="dividendValue" />
+                                <TableColumn text="Update Source" fx:id="dividendUpdateSource" />
+                                <TableColumn text="Update Time" fx:id="dividendUpdateTime" />
+                            </columns>
+                        </TableView>
+                    </AnchorPane>
+                </Tab>
+
+                <Tab text="RepoRate">
+                    <AnchorPane>
+
+                        <HBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+                            <Button text="Load" fx:id="repoRateLoadBtn" />
+                            <Button text="Save" fx:id="repoRateSaveBtn" />
+                        </HBox>
+
+                        <TableView fx:id="RepoRate" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+                            <columns>
+                                <TableColumn text="Date" fx:id="Repdt" />
+                                <TableColumn text="Index" fx:id="RepIndex" />
+                                <TableColumn text="Term" fx:id="RepTerm" />
+                                <TableColumn text="Bid" fx:id="RepBid" />
+                                <TableColumn text="Offer" fx:id="RepOffer" />
+
+                                <TableColumn text="Update Source" fx:id="RepUpdateSource" />
+                                <TableColumn text="Update Time" fx:id="RepUpdateTime" />
+                            </columns>
+                        </TableView>
+                    </AnchorPane>
+                </Tab>
+
+                <Tab text="FundingRate">
+                    <AnchorPane>
+
+                        <HBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+                            <Button text="Load" fx:id="fundingRateLoadBtn" />
+                            <Button text="Save" fx:id="fundingRateSaveBtn" />
+                        </HBox>
+
+                        <TableView fx:id="FundingRate" AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+                            <columns>
+                                <TableColumn text="Date" fx:id="FRdt" />
+                                <TableColumn text="Index" fx:id="FRFIndec" />
+                                <TableColumn text="Term" fx:id="FRTerm" />
+                                <TableColumn text="bid" fx:id="FRbid" />
+                                <TableColumn text="offer" fx:id="FRoffer" />
+
+                                <TableColumn text="Update Source" fx:id="FRUpdateSource" />
+                                <TableColumn text="Update Time" fx:id="FRUpdateTime" />
+                            </columns>
+                        </TableView>
+                    </AnchorPane>
+                </Tab>
+
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
