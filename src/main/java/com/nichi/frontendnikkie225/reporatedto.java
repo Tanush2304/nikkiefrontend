@@ -2,18 +2,18 @@ package com.nichi.frontendnikkie225;
 
 public class reporatedto {
 
-    private String Date;
+    private Integer Date;
     private String Index;
-    private String Term;
-    private String Bid;
-    private String Offer;
+    private Integer Term;
+    private Double Bid;
+    private Double Offer;
     private String UpdateSource;
     private String UpdateTime;
 
     public reporatedto() {
     }
 
-    public reporatedto(String Date, String Index, String Term, String Bid,String Offer, String UpdateSource, String UpdateTime) {
+    public reporatedto(Integer Date, String Index, Integer Term, Double Bid,Double Offer, String UpdateSource, String UpdateTime) {
         this.Date = Date;
         this.Index = Index;
         this.Term = Term;
@@ -23,11 +23,11 @@ public class reporatedto {
         this.UpdateTime = UpdateTime;
     }
 
-    public String getDate() {
+    public Integer getDate() {
         return Date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Integer date) {
         Date = date;
     }
 
@@ -35,32 +35,32 @@ public class reporatedto {
         return Index;
     }
 
-    public String getOffer() {
-        return Offer;
-    }
-
-    public void setOffer(String offer) {
-        Offer = offer;
-    }
-
     public void setIndex(String index) {
         Index = index;
     }
 
-    public String getTerm() {
+    public Integer getTerm() {
         return Term;
     }
 
-    public void setTerm(String term) {
+    public void setTerm(Integer term) {
         Term = term;
     }
 
-    public String getBid() {
+    public Double getBid() {
         return Bid;
     }
 
-    public void setBid(String bid) {
+    public void setBid(Double bid) {
         Bid = bid;
+    }
+
+    public Double getOffer() {
+        return Offer;
+    }
+
+    public void setOffer(Double offer) {
+        Offer = offer;
     }
 
     public String getUpdateSource() {

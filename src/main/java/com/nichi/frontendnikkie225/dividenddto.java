@@ -1,18 +1,18 @@
 package com.nichi.frontendnikkie225;
 
-public class dividenddto {
+public class dividenddto extends divisordto {
 
     private Integer Date;
     private String Index;
     private Integer DivDate;
-    private String Dividend;
+    private Double Dividend;
     private String UpdateSource;
     private String UpdateTime;
 
     public dividenddto() {
     }
 
-    public dividenddto(Integer Date, String Index, Integer DivDate, String Dividend, String UpdateSource, String UpdateTime) {
+    public dividenddto(Integer Date, String Index, Integer DivDate, Double Dividend, String UpdateSource, String UpdateTime) {
         this.Date = Date;
         this.Index = Index;
         this.DivDate = DivDate;
@@ -20,6 +20,8 @@ public class dividenddto {
         this.UpdateSource = UpdateSource;
         this.UpdateTime = UpdateTime;
     }
+
+
 
     public Integer getDate() {
         return Date;
@@ -41,16 +43,16 @@ public class dividenddto {
         return DivDate;
     }
 
-    public void setDivDate(Integer divDate) {
-        DivDate = divDate;
-    }
-
-    public String getDividend() {
+    public Double getDividend() {
         return Dividend;
     }
 
-    public void setDividend(String dividend) {
+    public void setDividend(Double dividend) {
         Dividend = dividend;
+    }
+
+    public void setDivDate(Integer divDate) {
+        DivDate = divDate;
     }
 
     public String getUpdateSource() {
